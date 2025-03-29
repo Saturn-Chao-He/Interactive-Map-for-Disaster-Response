@@ -6,35 +6,39 @@ Chao He and Da Hu
 
 Kennesaw State University
 
-This is the official demo code for [[Paper]](https://www.mdpi.com/)
+This is the official demo code for [[Paper]](https://www.mdpi.com/). 
+We develop a disaster response system that can read social media data and do post classification, then visualize the info on map.
 
-<p align="center">
+<p align="left">
   <img src="1.png" width="80%" title="workflow">
 </p>
 
-Model training and deployment pipelines
+Figure 1. Model training and deployment pipelines
 
-<p align="center">
+
+<p align="left">
   <img src="2.png" width="80%" title="workflow">
 </p>
 
-Markers with corresponding classifications
+Figure 2. Markers with corresponding classifications
 
-<p align="center">
+
+<p align="left">
   <img src="3.png" width="80%" title="workflow">
 </p>
 
-The architecture and implementation of the proposed website server.
+Figure 3. The architecture and implementation of the proposed website server.
 
 
-<p align="center">
+
+<p align="left">
   <img src="4.png" width="80%" title="workflow">
 </p>
 
-Social media information visualization of Hurricane Harvey on map (usernames are ex-cluded from the pop-up windows for privacy consideration).
+Figure 4. Social media information visualization of Hurricane Harvey on map (usernames are ex-cluded from the pop-up windows for privacy consideration).
 
 
-## 1. Download dataset
+## 1. Download Dataset
 **Dataset** : 
 [github](https://crisisnlp.qcri.org/humaid_dataset)
 
@@ -49,7 +53,7 @@ pip install -r requirements.txt
 
 ```
 
-Our trained Model
+Our Trained Model
 **Our trained Model is uploaded to Huggingface** : 
 [github](https://huggingface.co/)
 
@@ -63,16 +67,13 @@ python train.py
 
 ```
 
-## 4. Model Deployment and Web
-
-The project is Disaster Response System. 
-
+## 4. Model Deployment and Visualization on Map
 
 
 You can deploy it using Nginx [Nginx](https://nginx.org/)
 ```bash
 # Deploy a cloud server and get a public IP address:
-#run nginx
+# run nginx
 # run the script for reasoning
 python3 pridict.py
 
