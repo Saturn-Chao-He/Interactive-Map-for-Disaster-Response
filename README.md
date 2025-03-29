@@ -24,13 +24,15 @@ Markers with corresponding classifications
   <img src="3.png" width="80%" title="workflow">
 </p>
 
-Markers with corresponding classifications
+The architecture and implementation of the proposed website server.
+
 
 <p align="center">
   <img src="4.png" width="80%" title="workflow">
 </p>
 
-Markers with corresponding classifications
+Social media information visualization of Hurricane Harvey on map (usernames are ex-cluded from the pop-up windows for privacy consideration).
+
 
 ## 1. Download dataset
 **Dataset** : 
