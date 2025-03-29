@@ -9,25 +9,25 @@ Kennesaw State University
 This is the official demo code for [[Paper]](https://www.mdpi.com/)
 
 <p align="center">
-  <img src="workflow.png" width="80%" title="workflow">
+  <img src="1.png" width="80%" title="workflow">
 </p>
 
 Model training and deployment pipelines
 
 <p align="center">
-  <img src="Markers.png" width="80%" title="workflow">
+  <img src="2.png" width="80%" title="workflow">
 </p>
 
 Markers with corresponding classifications
 
 <p align="center">
-  <img src="figure4.png" width="80%" title="workflow">
+  <img src="3.png" width="80%" title="workflow">
 </p>
 
 Markers with corresponding classifications
 
 <p align="center">
-  <img src="figure5.png" width="80%" title="workflow">
+  <img src="4.png" width="80%" title="workflow">
 </p>
 
 Markers with corresponding classifications
