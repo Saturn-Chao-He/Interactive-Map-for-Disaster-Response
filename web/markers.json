@@ -1,0 +1,206 @@
+[
+    {
+        "lat": 29.75,
+        "lng": -95.3601,
+        "message": "A second person was killed on Saturday as Harvey, the most powerful storm to hit Texas in more than 50 years, roared inland, knocking out p",
+        "class": "injured_or_dead_people"
+    },
+    {
+        "lat": 29.789,
+        "lng": -95.3786,
+        "message": "DETAILS: #Evacuation order issued for those within the radius of the potential #explosion  #HurricaneHarvey #Texas",
+        "class": "displaced_people_and_evacuations"
+    },
+    {
+        "lat": 29.7605,
+        "lng": -95.495,
+        "message": "@kgdewitt24 Ive been wanting to complain this week ab the same stuff then I remind myself my house isnt flooded &amp; my doggies are safe #Harvey",
+        "class": "not_humanitarian"
+    },
+    {
+        "lat": 29.769,
+        "lng": -95.38,
+        "message": "Our sons house destroyed by Harvey.Lost everything he owns",
+        "class": "infrastructure_and_utility_damage"
+    },
+    {
+        "lat": 29.742,
+        "lng": -95.42,
+        "message": "Some journalists covering #Harvey cast aside role as observers to aid in rescues",
+        "class": "requests_or_urgent_needs"
+    },
+    {
+        "lat": 29.728,
+        "lng": -95.366,
+        "message": "WATCH! CoastGuard will do what it takes to save lives, including busting through rooftops to get to people trapped inside @USCG #Harvey",
+        "class": "requests_or_urgent_needs"
+    },
+    {
+        "lat": 29.76,
+        "lng": -95.36,
+        "message": "lets help out the victims of #Harvey and donate. Amazon has a wishlist w items the RedCross needs. #sendamessagewithlove",
+        "class": "requests_or_urgent_needs"
+    },
+    {
+        "lat": 29.769,
+        "lng": -95.32,
+        "message": "UPDATED: #Harvey is now a tropical depression, at least 38 dead, Texas &amp; Louisiana hit w/ catastrophic flooding",
+        "class": "injured_or_dead_people"
+    },
+    {
+        "lat": 29.78,
+        "lng": -95.305,
+        "message": "We got rescued out by boat but no shelter have beds left or food to feed us. @RedCross @Vanessa12News @GMA @ABC #Harvey",
+        "class": "requests_or_urgent_needs"
+    },
+    {
+        "lat": 29.75,
+        "lng": -95.289,
+        "message": "Houston Food Bank is back open to accept volunteers and donations",
+        "class": "requests_or_urgent_needs"
+    },
+    {
+        "lat": 29.77,
+        "lng": -95.3601,
+        "message": "Do you need food and supplies? Contact me. #Hurricane #Harvey",
+        "class": "other_relevant_information"
+    },
+    {
+        "lat": 29.789,
+        "lng": -95.3896,
+        "message": ".@HoustonTX telling Houston residents if you have water in your home now, you need to leave, water expected next 10-15 days #Harvey",
+        "class": "caution_and_advice"
+    },
+    {
+        "lat": 29.7705,
+        "lng": -95.385,
+        "message": "GALLERY: Hurricane Harvey causes widespread damage",
+        "class": "infrastructure_and_utility_damage"
+    },
+    {
+        "lat": 29.769,
+        "lng": -95.37,
+        "message": "@talldrinkowater Widespread flooding from Tropical Storm Harvey is seen Monday, Aug. 28, 2017, in La Grange, Texas.",
+        "class": "not_humanitarian"
+    },
+    {
+        "lat": 29.752,
+        "lng": -95.4,
+        "message": "#CBP Blackhawk aircrew rescues #HurricaneHarvey survivor from rooftop.",
+        "class": "requests_or_urgent_needs"
+    },
+    {
+        "lat": 29.753,
+        "lng": -95.366,
+        "message": "My thoughts and prayers are with all the people effected from #HurricaneHarvey. ",
+        "class": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "lat": 29.757,
+        "lng": -95.358,
+        "message": "Epic Video: \u2018Redneck Army\u2019 Uses Monster Trucks to Save National Guard From Houston Floods  #Harvey #BetterThanFiction",
+        "class": "requests_or_urgent_needs"
+    },
+    {
+        "lat": 29.769,
+        "lng": -95.339,
+        "message": "We raised $13,848, matching $6,924 in donations w/ 2Cs #HurricaneHarvey Drive which just ended.Thx to all who opened your hearts &amp; wallets!",
+        "class": "requests_or_urgent_needs"
+    },
+    {
+        "lat": 29.7999,
+        "lng": -95.3159,
+        "message": "Coast Guard deploys crew and supplies to Hurricane Harvey Credit: Courtesy | U.S. Coast Guard District 11 | Date Taken: 08/28/2017",
+        "class": "requests_or_urgent_needs"
+    },
+    {
+        "lat": 29.7788,
+        "lng": -95.289,
+        "message": "Important look into what parts of Houston need help. story by @katyaabaz",
+        "class": "not_humanitarian"
+    },
+    {
+        "lat": 29.77,
+        "lng": -95.3751,
+        "message": "On @NC9: Car bursts into flames in East EP\u2022#Harvey makes landfall again\u2022Olympic swimmer Michael Phelps reveals big family news",
+        "class": "not_humanitarian"
+    },
+    {
+        "lat": 29.789,
+        "lng": -95.3896,
+        "message": "This weekend on #TheBoulevard, @SMUBookstore will set up an official school supplies drop-off point for kids affected by #Harvey.",
+        "class": "requests_or_urgent_needs"
+    },
+    {
+        "lat": 29.7605,
+        "lng": -95.375,
+        "message": "She was trying to help by poking holes in the ground so the water could escape. ",
+        "class": "not_humanitarian"
+    },
+    {
+        "lat": 29.769,
+        "lng": -95.3945,
+        "message": "They found him stranded on a car abandoned surrounded by floodwater in Houston. Hes been rescued #HurricaneHarvey",
+        "class": "requests_or_urgent_needs"
+    },
+    {
+        "lat": 29.7999,
+        "lng": -95.3175,
+        "message": "Tonight, Im talking with @seanhannity on @FoxNews about the National Day of Prayer this Sunday for #Harvey victims. #TuneIn at 9pm CT.",
+        "class": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "lat": 29.79,
+        "lng": -95.289,
+        "message": "After a two hour boat ride a calf is free from #HurricaneHarveys flood water. Volunteers have been saving livestock for hours #WFAA",
+        "class": "requests_or_urgent_needs"
+    },
+    {
+        "lat": 29.77,
+        "lng": -95.3799,
+        "message": "Texas welcomes the Houston Cougars to Austin as Hurricane Harvey forces evacuation #HookEm",
+        "class": "displaced_people_and_evacuations"
+    },
+    {
+        "lat": 29.779,
+        "lng": -95.3766,
+        "message": "Today we visited the Texas coast &amp; gave out food, water, &amp; basic necessities to the residents of Refugio, Rockport, n Port Aransas #Harvey",
+        "class": "requests_or_urgent_needs"
+    },
+    {
+        "lat": 29.789,
+        "lng": -95.395,
+        "message": "@KBTXShel Over 30 in our neighborhood, sun finally came out with double #rainbows  #TexasStrong #HurricaneHarvey",
+        "class": "not_humanitarian"
+    },
+    {
+        "lat": 29.779,
+        "lng": -95.39,
+        "message": "BREAKING: 2 more prisons face evacuation due to Hurricane Harvey flooding  via @HoustonChron #txlege #txpolitics",
+        "class": "displaced_people_and_evacuations"
+    },
+    {
+        "lat": 29.769,
+        "lng": -95.41,
+        "message": "Harvey hits #PortArthur with 26 inches of rain in 1 day, flash floods #HurricaneHarvey",
+        "class": "not_humanitarian"
+    },
+    {
+        "lat": 29.7759,
+        "lng": -95.376,
+        "message": ".@CNN you wanted to cover #Harvey &amp; lady is right to be angry. This couldve been avoided. Deaths avoided. No plans from elected officials.",
+        "class": "injured_or_dead_people"
+    },
+    {
+        "lat": 29.7799,
+        "lng": -95.35,
+        "message": "Heres how you can help animals affected by Hurricane Harvey  via @todayshow",
+        "class": "requests_or_urgent_needs"
+    },
+    {
+        "lat": 29.779,
+        "lng": -95.33,
+        "message": "Severe damage @ Aransas County Airport near Rockport &amp; Fulton Texas. #HurricaneHarvey",
+        "class": "infrastructure_and_utility_damage"
+    }
+]

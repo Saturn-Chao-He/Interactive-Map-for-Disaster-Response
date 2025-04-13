@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<base target="_top">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Disaster Response System</title>
+	<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+
+    <!-- Leaflet CSS -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <!-- Leaflet JS -->
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+	<!-- FontAwesome for icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<!-- Leaflet Awesome Markers CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.awesome-markers/2.0.4/leaflet.awesome-markers.css">
+	<!-- Leaflet Awesome Markers JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.awesome-markers/2.0.4/leaflet.awesome-markers.min.js"></script>
+
+	<style>
+		html, body {
+			height: 100%;
+			margin: 0;
+		}
+		.leaflet-container {
+			height: 720px;
+			width: 1280px;
+			max-width: 100%;
+			max-height: 100%;
+		}
+	</style>
+</head>
+<body>
+
+<div id="map" style="width: 1280px; height: 720px;"></div>
+<script>
+	// Initialize the map
+	const map = L.map('map').setView([29.7601, -95.3701], 13);
+
+	// Add tile layer
+	const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+		maxZoom: 19,
+		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+	}).addTo(map);
+	const redIcon = L.icon({
+    			iconUrl: 'http://localhost:8000/icons/red.png', // injured_or_dead_people
+    			iconSize: [22, 32], // Size of the marker
+    			iconAnchor: [16, 32], // Anchor point
+    			popupAnchor: [0, -32] // Popup position
+			});
+	const greenIcon = L.icon({
+    			iconUrl: 'http://localhost:8000/icons/green.png', //rescue_volunteering_or_donation_effort
+    			iconSize: [22, 32], // Size of the marker
+    			iconAnchor: [16, 32], // Anchor point
+    			popupAnchor: [0, -32] // Popup position
+			});
+	const green0Icon = L.icon({
+    			iconUrl: 'http://localhost:8000/icons/green0.png', // caution_and_advice
+    			iconSize: [22, 32], // Size of the marker
+    			iconAnchor: [16, 32], // Anchor point
+    			popupAnchor: [0, -32] // Popup position
+			});
+	const coffeeIcon = L.icon({
+    			iconUrl: 'http://localhost:8000/icons/coffee.png', // displaced_people_and_evacuations
+    			iconSize: [22, 32], // Size of the marker
+    			iconAnchor: [16, 32], // Anchor point
+    			popupAnchor: [0, -32] // Popup position
+			});
+	const blueIcon = L.icon({
+    			iconUrl: 'http://localhost:8000/icons/blue.png', // infrastructure_and_utility_damage
+    			iconSize: [22, 32], // Size of the marker
+    			iconAnchor: [16, 32], // Anchor point
+    			popupAnchor: [0, -32] // Popup position
+			});
+	const pinkIcon = L.icon({
+    			iconUrl: 'http://localhost:8000/icons/pink.png', // missing_or_found_people
+    			iconSize: [22, 32], // Size of the marker
+    			iconAnchor: [16, 32], // Anchor point
+    			popupAnchor: [0, -32] // Popup position
+			});
+	const greyIcon = L.icon({
+    			iconUrl: 'http://localhost:8000/icons/grey.png', // other_relevant_information
+    			iconSize: [22, 32], // Size of the marker
+    			iconAnchor: [16, 32], // Anchor point
+    			popupAnchor: [0, -32] // Popup position
+			});
+	const purpleIcon = L.icon({
+    			iconUrl: 'http://localhost:8000/icons/purple.png', // not_humanitarian
+    			iconSize: [22, 32], // Size of the marker
+    			iconAnchor: [16, 32], // Anchor point
+    			popupAnchor: [0, -32] // Popup position
+			});
+	const orangeIcon = L.icon({
+    			iconUrl: 'http://localhost:8000/icons/orange.png', // requests_or_urgent_needs
+    			iconSize: [22, 32], // Size of the marker
+    			iconAnchor: [16, 32], // Anchor point
+    			popupAnchor: [0, -32] // Popup position
+			});
+	const yellowIcon = L.icon({
+    			iconUrl: 'http://localhost:8000/icons/yellow.png', // sympathy_and_support
+    			iconSize: [22, 32], // Size of the marker
+    			iconAnchor: [16, 32], // Anchor point
+    			popupAnchor: [0, -32] // Popup position
+			});
+
+	// Store current markers
+	let markers = [];
+
+	// Fetch marker data from the server
+	async function fetchMarkers() {
+		try {
+			const response = await fetch('http://localhost:8000/markers.json');
+			const data = await response.json();
+			
+
+			// Remove existing markers
+			markers.forEach(marker => map.removeLayer(marker));
+			markers = [];
+
+			// Add new markers to the map
+			data.forEach(item => {
+				if (item.class == "injured_or_dead_people") {
+					const marker = L.marker([item.lat, item.lng], { icon: redIcon }).addTo(map)
+						.bindPopup(`<b>[Injured or dead people]</b><br />${item.message}`);
+					markers.push(marker);
+				} else if (item.class == "rescue_volunteering_or_donation_effort") {
+					const marker = L.marker([item.lat, item.lng], { icon: greenIcon }).addTo(map)
+						.bindPopup(`<b>[Rescue volunteering or donation effort]</b><br />${item.message}`);
+					markers.push(marker);
+				} else if (item.class == "caution_and_advice") {
+					const marker = L.marker([item.lat, item.lng], { icon: green0Icon }).addTo(map)
+						.bindPopup(`<b>[Caution and advice]</b><br />${item.message}`);
+					markers.push(marker);
+				} else if (item.class == "displaced_people_and_evacuations") {
+					const marker = L.marker([item.lat, item.lng], { icon: coffeeIcon }).addTo(map)
+						.bindPopup(`<b>[Displaced people and evacuations]</b><br />${item.message}`);
+					markers.push(marker);
+				} else if (item.class == "infrastructure_and_utility_damage") {
+					const marker = L.marker([item.lat, item.lng], { icon: blueIcon }).addTo(map)
+						.bindPopup(`<b>[Infrastructure and utility damage]</b><br />${item.message}`);
+					markers.push(marker);
+				} else if (item.class == "missing_or_found_people") {
+					const marker = L.marker([item.lat, item.lng], { icon: pinkIcon }).addTo(map)
+						.bindPopup(`<b>[Missing or found people]</b><br />${item.message}`);
+					markers.push(marker);
+				} else if (item.class == "other_relevant_information") {
+					const marker = L.marker([item.lat, item.lng], { icon: greyIcon }).addTo(map)
+						.bindPopup(`<b>[Other relevant information]</b><br />${item.message}`);
+					markers.push(marker);
+				} else if (item.class == "not_humanitarian") {
+					const marker = L.marker([item.lat, item.lng], { icon: purpleIcon }).addTo(map)
+						.bindPopup(`<b>[Not humanitarian]</b><br />${item.message}`);
+					markers.push(marker);
+				} else if (item.class == "requests_or_urgent_needs") {
+					const marker = L.marker([item.lat, item.lng], { icon: orangeIcon }).addTo(map)
+						.bindPopup(`<b>[Requests or urgent_needs]</b><br />${item.message}`);
+					markers.push(marker);
+				} else if (item.class == "sympathy_and_support") {
+					const marker = L.marker([item.lat, item.lng], { icon: yellowIcon }).addTo(map)
+						.bindPopup(`<b>[Sympathy and support]</b><br />${item.message}`);
+					markers.push(marker);
+				}
+				
+			});
+		} catch (error) {
+			console.error('Error fetching markers:', error);
+		}
+	}
+
+	
+	fetchMarkers(); // Initial fetch
+	setInterval(fetchMarkers, 5 * 1000);
+</script>
+</body>
+</html>
