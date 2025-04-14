@@ -1,12 +1,12 @@
 ## Social Media Analytics for Disaster Response: Classification and Geospatial Visualization Framework
 
-#### [[Paper]](https://www.mdpi.com/) | [[Video]](https://youtu.be/gU3no4x2rHs)
+#### [[Paper]](https://www.mdpi.com/2076-3417/15/8/4330) | [[Video]](https://youtu.be/gU3no4x2rHs)
 
 Chao He and [[Da Hu]](https://scholar.google.com/citations?user=Y7_j-GMAAAAJ&hl=en&oi=ao) 
 
 Kennesaw State University
 
-This is the official demo code for [[Paper]](https://www.mdpi.com/). 
+This is the official demo code for [[Paper]](https://www.mdpi.com/2076-3417/15/8/4330). 
 
 We develop a disaster response system that can read social media data and do post classification, then visualize the info on map.
 
