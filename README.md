@@ -1,6 +1,6 @@
 ## Social Media Analytics for Disaster Response: Classification and Geospatial Visualization Framework
 
-#### [[Paper]](https://www.mdpi.com/) | [[Video]](https://)
+#### [[Paper]](https://www.mdpi.com/) | [[Video]](https://youtu.be/gU3no4x2rHs)
 
 Chao He and Da Hu
 
