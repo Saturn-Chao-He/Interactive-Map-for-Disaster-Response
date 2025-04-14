@@ -32,7 +32,7 @@ We develop a disaster response system that can read social media data and do pos
 
 <div align="center">
   <img src="4.png" width="80%" title="workflow"><br>
-  <strong>Figure 4.</strong> Social media information visualization of Hurricane Harvey on map (usernames are ex-cluded from the pop-up windows for privacy considerations).
+  <strong>Figure 4.</strong> Social media information visualization of Hurricane Harvey on map (usernames are excluded from the pop-up windows for privacy considerations).
 </div>
 <br><br>
 
