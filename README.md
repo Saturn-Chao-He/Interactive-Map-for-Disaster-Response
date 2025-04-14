@@ -115,4 +115,4 @@ Great thanks to the [[HumAID]](https://crisisnlp.qcri.org/humaid_dataset), as th
 
 ## Cite
 If this project is useful in your research, please cite:
-> Chao He and Da Hu. "Social Media Analytics for Disaster Response: Classification and Geospatial Visualization Framework", MPDI.
+> He, C., & Hu, D. (2025). Social Media Analytics for Disaster Response: Classification and Geospatial Visualization Framework. Applied Sciences, 15(8), 4330. https://doi.org/10.3390/app15084330
