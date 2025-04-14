@@ -54,13 +54,13 @@ Alam, F.; Qazi, U.; Imran, M. HumAID: Human-Annotated Disaster Incidents Data fr
 
 Create Python environment and install the required packages using Conda:
 ```bash
-conda create --name ModernBert python==3.8
+conda create --name ModernBert python==3.9
 conda activate ModernBert
 
 #python == 3.9
 pip install "torch==2.4.1" tensorboard
-!pip install flash-attn "setuptools<71.0.0" scikit-learn 
-!pip install  --upgrade \
+pip install flash-attn "setuptools<71.0.0" scikit-learn 
+pip install  --upgrade \
    "datasets==3.1.0" \
    "accelerate==1.2.1" \
    "hf-transfer==0.1.8"
