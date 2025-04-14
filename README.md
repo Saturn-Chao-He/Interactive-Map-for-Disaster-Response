@@ -57,7 +57,17 @@ Create Python environment and install the required packages using Conda:
 conda create --name ModernBert python==3.8
 conda activate ModernBert
 
-pip install -r requirements.txt
+#python == 3.9
+pip install "torch==2.4.1" tensorboard
+!pip install flash-attn "setuptools<71.0.0" scikit-learn 
+!pip install  --upgrade \
+   "datasets==3.1.0" \
+   "accelerate==1.2.1" \
+   "hf-transfer==0.1.8"
+pip install "git+https://github.com/huggingface/transformers.git@6e0515e99c39444caae39472ee1b2fd76ece32f1" --upgrade
+pip install nltk
+pip install ipywidgets --upgrade
+pip install --upgrade transformers
 
 ```
 
