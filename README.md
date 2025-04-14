@@ -2,7 +2,7 @@
 
 #### [[Paper]](https://www.mdpi.com/) | [[Video]](https://youtu.be/gU3no4x2rHs)
 
-Chao He and Da Hu
+Chao He and [[Da Hu]](https://scholar.google.com/citations?user=Y7_j-GMAAAAJ&hl=en&oi=ao) 
 
 Kennesaw State University
 
@@ -10,38 +10,31 @@ This is the official demo code for [[Paper]](https://www.mdpi.com/).
 
 We develop a disaster response system that can read social media data and do post classification, then visualize the info on map.
 
-<p align="left">
-  <img src="1.png" width="80%" title="workflow">
-</p>
-
-Figure 1. Model training and deployment pipelines
-
-
-
-<p align="left">
-  <img src="2.png" width="80%" title="workflow">
-</p>
-
-Figure 2. Markers with corresponding classifications
+<div align="center">
+  <img src="1.png" width="80%" title="workflow"><br>
+  <strong>Figure 1.</strong> Model training and deployment pipelines.
+</div>
+<br><br>
 
 
-
-<p align="left">
-  <img src="3.png" width="80%" title="workflow">
-</p>
-
-Figure 3. The architecture and implementation of the proposed website server.
-
+<div align="center">
+  <img src="2.png" width="80%" title="workflow"><br>
+  <strong>Figure 2.</strong> Markers with corresponding classifications.
+</div>
+<br><br>
 
 
+<div align="center">
+  <img src="3.png" width="80%" title="workflow"><br>
+  <strong>Figure 3.</strong> The architecture and implementation of the proposed website server.
+</div>
+<br><br>
 
-<p align="left">
-  <img src="4.png" width="80%" title="workflow">
-</p>
-
-Figure 4. Social media information visualization of Hurricane Harvey on map (usernames are ex-cluded from the pop-up windows for privacy consideration).
-
-
+<div align="center">
+  <img src="4.png" width="80%" title="workflow"><br>
+  <strong>Figure 4.</strong> Social media information visualization of Hurricane Harvey on map (usernames are ex-cluded from the pop-up windows for privacy considerations).
+</div>
+<br><br>
 
 
 ## 1. Download Dataset
@@ -52,7 +45,7 @@ Alam, F.; Qazi, U.; Imran, M. HumAID: Human-Annotated Disaster Incidents Data fr
 
 ## 2. Model Training
 
-Create Python environment and install the required packages using Conda:
+Create Python environment and install the required packages:
 ```bash
 conda create --name ModernBert python==3.9
 conda activate ModernBert
@@ -75,25 +68,32 @@ Our Trained Model
 **Our trained Model is uploaded to Huggingface** : 
 [[Huggingface]](https://huggingface.co/)
 
-## 3. Model Training
-
-Run the training script:
+Run the training script in the folder train:
 ```bash
-python train.py
-
-
+# download the dataset to data/
+# save the best model to best_model/ 
+run *.ipynb
 
 ```
 
-## 4. Model Deployment and Visualization on Map
+## 3. Model Deployment and Visualization on Map
 
 
 You can deploy it using [[Nginx]](https://nginx.org/)
 ```bash
-# Deploy a cloud server and get a public IP address:
-# run nginx
+# Deploy a cloud server and get a public IP address
+# then install nginx
+sudo apt update
+sudo apt install nginx -y
+sudo systemctl start nginx
+sudo systemctl enable nginx
+sudo systemctl status nginx
+
+# Allow Nginx through firewall (if ufw is enabled)
+sudo ufw allow 'Nginx Full'
+
 # run the script for reasoning
-python3 pridict.py
+python pridict.py
 
 Open browser and visit https://your-public-ip-address
 ```
@@ -101,10 +101,10 @@ Open browser and visit https://your-public-ip-address
 You can test it using python http server
 ```bash
 # run http server
-python3 -m http.server 8000
+python -m http.server 8000
 
 # run the script for reasoning
-python3 pridict.py
+python pridict.py
 
 Open browser and visit https://localhost:8000
 ```
