@@ -2,7 +2,7 @@
 
 #### [[Paper]](https://www.mdpi.com/2076-3417/15/8/4330) | [[Video]](https://youtu.be/gU3no4x2rHs)
 
-Chao He and [[Da Hu]](https://scholar.google.com/citations?user=Y7_j-GMAAAAJ&hl=en&oi=ao) 
+[[Chao He]](https://scholar.google.com/citations?user=g4Yv3BkAAAAJ&hl=en) and [[Da Hu]](https://scholar.google.com/citations?user=Y7_j-GMAAAAJ&hl=en&oi=ao) 
 
 Kennesaw State University
 
@@ -11,27 +11,27 @@ This is the official demo code for [[Paper]](https://www.mdpi.com/2076-3417/15/8
 We develop a disaster response system that can read social media data and do post classification, then visualize the info on map.
 
 <div align="center">
-  <img src="1.png" width="80%" title="workflow"><br>
+  <img src="1.png" width="100%" title="workflow"><br>
   <strong>Figure 1.</strong> Model training and deployment pipelines.
 </div>
 <br><br>
 
 
 <div align="center">
-  <img src="2.png" width="80%" title="workflow"><br>
+  <img src="2.png" width="100%" title="workflow"><br>
   <strong>Figure 2.</strong> Markers with corresponding classifications.
 </div>
 <br><br>
 
 
 <div align="center">
-  <img src="3.png" width="80%" title="workflow"><br>
+  <img src="3.png" width="100%" title="workflow"><br>
   <strong>Figure 3.</strong> The architecture and implementation of the proposed website server.
 </div>
 <br><br>
 
 <div align="center">
-  <img src="4.png" width="80%" title="workflow"><br>
+  <img src="4.png" width="100%" title="workflow"><br>
   <strong>Figure 4.</strong> Social media information visualization of Hurricane Harvey on map (usernames are excluded from the pop-up windows for privacy considerations).
 </div>
 <br><br>
