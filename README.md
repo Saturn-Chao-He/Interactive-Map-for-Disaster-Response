@@ -114,5 +114,5 @@ Open browser and visit https://localhost:8000
 Great thanks to the [[HumAID]](https://crisisnlp.qcri.org/humaid_dataset), as the dataset is used in our research.
 
 ## Cite
-If this project is useful in your research, please cite:
+If this project is useful in your research, please cite [[Paper]](https://www.mdpi.com/2076-3417/15/8/4330):
 > He, C., & Hu, D. (2025). Social Media Analytics for Disaster Response: Classification and Geospatial Visualization Framework. Applied Sciences, 15(8), 4330. https://doi.org/10.3390/app15084330
